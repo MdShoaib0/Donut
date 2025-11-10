@@ -1,9 +1,9 @@
 import React from 'react'
-import HeroSection from './components/HeroSection';
+import Strawberry from "./screens/Strawberry"
 
 function App() {
   return (
-    <HeroSection />
+    <Strawberry />
   )
 }
 
