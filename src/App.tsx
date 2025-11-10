@@ -1,4 +1,3 @@
-import React from 'react'
 import Strawberry from "./screens/Strawberry"
 
 function App() {
