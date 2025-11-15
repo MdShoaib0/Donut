@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "../assets/BlueBerry-removebg-preview.png";
 import { motion } from "framer-motion";
 
 interface HeaderProps {
   color: string;
+  logo: string;
 }
 
-function Header({ color }: HeaderProps) {
+function Header({ color, logo }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
