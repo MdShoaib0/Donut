@@ -27,7 +27,7 @@ function Chocolate({onScreenChange}: ChocolateProps): JSX.Element {
       style={{ backgroundColor: donutBg }}
       className="w-screen min-h-screen overflow-x-hidden sm:px-16 px-8"
     >
-      <Header color={donutColor} logo={logo1} />
+      <Header color={donutColor} logo={logo3} />
 
       <main className="flex flex-col-reverse lg:flex-row justify-between items-center mt-20 lg:mt-28 px-6 sm:px-12 lg:px-20">
         <motion.div
