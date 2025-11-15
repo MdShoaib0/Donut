@@ -24,7 +24,7 @@ function Strawberry({ onScreenChange }: StrawberryProps) {
   return (
     <div
       style={{ backgroundColor: donutBg }}
-      className="w-screen min-h-screen overflow-x-hidden sm:px-16 px-8"
+      className="w-screen min-h-screen overflow-x-hidden sm:px-16 px-12 pb-8 sm:pb-0"
     >
       <Header color={donutColor} logo={logo1} />
 
@@ -56,7 +56,7 @@ function Strawberry({ onScreenChange }: StrawberryProps) {
             </Button>
           </div>
 
-          <div className="flex gap-5 mt-6">
+          <div className="flex gap-5 mt-6 justify-center sm:justify-start">
             <Images img={logo1} name={donutName} onClick={() => onScreenChange(1)} />
             <Images img={logo2} name={donutName} onClick={() => onScreenChange(2)} />
             <Images img={logo3} name={donutName} onClick={() => onScreenChange(3)} />

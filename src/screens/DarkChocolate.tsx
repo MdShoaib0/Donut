@@ -25,7 +25,7 @@ function Chocolate({onScreenChange}: ChocolateProps): JSX.Element {
   return (
     <div
       style={{ backgroundColor: donutBg }}
-      className="w-screen min-h-screen overflow-x-hidden sm:px-16 px-8"
+      className="w-screen min-h-screen overflow-x-hidden sm:px-16 px-12 pb-8 sm:pb-0"
     >
       <Header color={donutColor} logo={logo3} />
 
@@ -57,7 +57,7 @@ function Chocolate({onScreenChange}: ChocolateProps): JSX.Element {
             </Button>
           </div>
 
-          <div className="flex gap-5 mt-6">
+          <div className="flex gap-5 mt-6 justify-center sm:justify-start">
             <Images img={logo1} name={donutName} onClick={() => onScreenChange(1)} />
             <Images img={logo2} name={donutName} onClick={() => onScreenChange(2)} />
             <Images img={logo3} name={donutName} onClick={() => onScreenChange(3)} />
