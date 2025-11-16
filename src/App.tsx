@@ -1,10 +1,8 @@
 import { useState } from "react";
-import BlueBerry from "./screens/BlueBerry";
-import Chocolate from "./screens/DarkChocolate";
-import Strawberry from "./screens/Strawberry";
+import DonutScreen from "./screens/DonutScreen";
 
 function App() {
-  const [screen, setScreen] = useState(1);
+  const [screen, setScreen] = useState<number>(1);
 
   const handleScreen = (screenNumber: number) => {
     setScreen(screenNumber);
@@ -12,9 +10,9 @@ function App() {
 
   return (
     <>
-      {screen === 1 && <Strawberry onScreenChange={handleScreen} />}
-      {screen === 2 && <BlueBerry onScreenChange={handleScreen} />}
-      {screen === 3 && <Chocolate onScreenChange={handleScreen} />}
+      {screen === 1 && <DonutScreen screen={screen} onScreenChange={handleScreen} />}
+      {screen === 2 && <DonutScreen screen={screen} onScreenChange={handleScreen} />}
+      {screen === 3 && <DonutScreen screen={screen} onScreenChange={handleScreen} />}
     </>
   );
 }

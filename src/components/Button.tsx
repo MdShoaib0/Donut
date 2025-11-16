@@ -1,6 +1,6 @@
 const Button = ({ children = "Order Now", variant = "primary", color = "#00bfff" }) => {
   const base =
-    "cursor-pointer hover:scale-105 transition-all duration-300 px-8 py-3 rounded-full font-medium";
+    "cursor-pointer hover:scale-105 transition-all duration-300 px-8 py-3 rounded-full font-medium shadow-lg";
 
   if (variant === "primary") {
     return (
